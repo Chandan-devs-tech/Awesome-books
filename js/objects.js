@@ -5,16 +5,20 @@ const bookListContainer = document.querySelector('.bookListContainer');
 
 let arrayOfBooks = JSON.parse(localStorage.getItem('arrayOfBooks')) || [];
 
+// removeBook function
+
 function removeBook(e) {
   const parentArticle = e.currentTarget.parentElement;
   bookListContainer.removeChild(parentArticle);
   arrayOfBooks = arrayOfBooks.filter(
-    (item) => item.id !== parentArticle.dataset.id
+    (item) => item.id !== parentArticle.dataset.id,
   );
   localStorage.setItem('arrayOfBooks', JSON.stringify(arrayOfBooks));
 }
 
-function displayBooks() {
+// displayBook function
+
+function displayBook() {
   bookListContainer.innerHTML = '';
   arrayOfBooks.forEach((item) => {
     const article = document.createElement('article');
@@ -34,9 +38,10 @@ function displayBooks() {
   });
 }
 
-displayBooks();
+displayBook();
 
 // addItem function
+
 function addItem() {
   const value1 = titleInput.value;
   const value2 = authorInput.value;
@@ -51,7 +56,7 @@ function addItem() {
       author: value2,
     };
     arrayOfBooks.push(book);
-    displayBooks();
+    displayBook();
     localStorage.setItem('arrayOfBooks', JSON.stringify(arrayOfBooks));
     titleInput.value = '';
     authorInput.value = '';
