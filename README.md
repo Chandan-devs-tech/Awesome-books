@@ -34,7 +34,7 @@
 
 # 📖 [AWESOME BOOKS] <a name="about-project"></a>
 
-**[Awesome Books]**  is a simple project which is made using JavaScript and it is adding, removing and storing the books into the local storage of the browser.
+**[Awesome Books]** is a simple project which is made using JavaScript and it is adding, removing and storing the books into the local storage of the browser.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -74,6 +74,7 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+
 - Laptop
 - GitHub
 - Git
@@ -149,11 +150,11 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
+👤 **Md Mahadi Hasan Rifat**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Rifat8080)
+- Twitter: [@twitterhandle](https://twitter.com/mdmahadirifat98)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/md-mahadi-hasan-rifat-8b7851265/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
