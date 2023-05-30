@@ -8,7 +8,9 @@ let arrayOfBooks = JSON.parse(localStorage.getItem('arrayOfBooks')) || [];
 function removeBook(e) {
   const parentArticle = e.currentTarget.parentElement;
   bookListContainer.removeChild(parentArticle);
-  arrayOfBooks = arrayOfBooks.filter((item) => item.id !== parentArticle.dataset.id);
+  arrayOfBooks = arrayOfBooks.filter(
+    (item) => item.id !== parentArticle.dataset.id
+  );
   localStorage.setItem('arrayOfBooks', JSON.stringify(arrayOfBooks));
 }
 
@@ -35,3 +37,24 @@ function displayBooks() {
 displayBooks();
 
 // addItem function
+function addItem() {
+  const value1 = titleInput.value;
+  const value2 = authorInput.value;
+  const bookId = new Date().getTime().toString();
+  if (bookListContainer.length === 0) {
+    bookListContainer.style.display = 'none';
+  }
+  if (value1 !== '' && value2 !== '') {
+    const book = {
+      title: value1,
+      id: bookId,
+      author: value2,
+    };
+    arrayOfBooks.push(book);
+    displayBooks();
+    localStorage.setItem('arrayOfBooks', JSON.stringify(arrayOfBooks));
+    titleInput.value = '';
+    authorInput.value = '';
+  }
+}
+formBtn.addEventListener('click', addItem);
