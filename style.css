@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  width: 23%;
+  margin-left: 7px;
+}
+
+.mainContainer h1 {
+  padding: 20px 10px;
+}
+
+.bookListContainer {
+  display: none;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+
+.removeBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: medium;
+}
+
+.formBtn {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: medium;
+}
+
+.bookListItems {
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+}
+
+.bookList {
+  font-size: larger;
+}
