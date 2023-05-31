@@ -3,21 +3,79 @@
   padding: 0;
 }
 
-.mainContainer {
-  width: 100%;
-  margin-left: 7px;
-  align-items: center;
+body {
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-.mainContainer h1 {
-  padding: 20px 10px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.headerTitle {
+  padding-left: 5px;
+}
+
+.headerTitle a {
+  text-decoration: none;
+  color: black;
+}
+
+.headerList {
+  display: flex;
+  list-style: none;
+}
+
+.headerList li {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.headerListBtn {
+  border-right: 2px solid black;
+  padding: 10px;
+}
+
+.contactBtn {
+  padding: 10px;
+}
+
+.liveDate {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.mainContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
   text-align: center;
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+
+.listSection {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .bookListContainer {
-  display: none;
   border: 2px solid black;
   border-radius: 3px;
   width: 50%;
@@ -25,12 +83,12 @@
 
 .formContainer {
   justify-content: center;
-  display: flex;
   flex-direction: column;
   gap: 15px;
   padding-bottom: 20px;
   padding-top: 25px;
   width: 35%;
+  display: none;
 }
 
 .removeBtn {
@@ -90,4 +148,41 @@ button {
 
 .formTitle {
   text-align: center;
+  font-size: xx-large;
+}
+
+.contactTitle {
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+
+.contactSection {
+  font-size: large;
+  font-weight: bold;
+  gap: 25px;
+  display: none;
+}
+
+.contactDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  margin: 0 12px 10px 12px;
+  border-radius: 3px;
+  padding: 5px 15px;
+  width: 93%;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
 }
