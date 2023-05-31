@@ -14,7 +14,7 @@ class BookList {
     const parentArticle = e.currentTarget.parentElement;
     this.bookListContainer.removeChild(parentArticle);
     this.arrayOfBooks = this.arrayOfBooks.filter(
-      (item) => item.id !== parentArticle.dataset.id
+      (item) => item.id !== parentArticle.dataset.id,
     );
     localStorage.setItem('arrayOfBooks', JSON.stringify(this.arrayOfBooks));
   }
