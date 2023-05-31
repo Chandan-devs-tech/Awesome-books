@@ -59,7 +59,7 @@ This project is created using JavaScript objects and DOM.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://chandan-devs-tech.github.io/Awesome-books/)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +129,7 @@ I have deployed this project using: Github pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Creating a complete website with navigation]**
+- [ ] **[Awesome books: with ES6]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
