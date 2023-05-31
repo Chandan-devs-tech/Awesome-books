@@ -14,14 +14,28 @@ function updateClock() {
     'December',
   ];
   const d = new Date();
+  const day = d.getDate();
+  let daySuffix;
+  switch (day % 10) {
+    case 1:
+      daySuffix = 'st';
+      break;
+    case 2:
+      daySuffix = 'nd';
+      break;
+    case 3:
+      daySuffix = 'rd';
+      break;
+    default:
+      daySuffix = 'th';
+  }
+
   const ampm = d.getHours >= 12 ? 'PM' : 'AM';
-  const zeroToSec =
-    d.getSeconds() < 10 ? `0${d.getSeconds()}` : `${d.getSeconds()}`;
-  const zeroToMin =
-    d.getMinutes() < 10 ? `0${d.getMinutes()}` : `${d.getMinutes()}`;
+  const zeroToSec = d.getSeconds() < 10 ? `0${d.getSeconds()}` : `${d.getSeconds()}`;
+  const zeroToMin = d.getMinutes() < 10 ? `0${d.getMinutes()}` : `${d.getMinutes()}`;
   const zeroToHour = d.getHours() < 10 ? `0${d.getHours()}` : `${d.getHours()}`;
 
-  let d1 = `${monthNames[d.getMonth()]} ${d.getDate()}th ${d.getFullYear()}, `;
+  let d1 = `${monthNames[d.getMonth()]} ${d.getDate()}${daySuffix} ${d.getFullYear()}, `;
   d1 = `${d1} ${zeroToHour}:${zeroToMin}:${zeroToSec}${ampm}`;
   document.getElementById('demo').innerHTML = d1;
 }
@@ -71,7 +85,7 @@ class BookList {
     const parentArticle = e.currentTarget.parentElement;
     this.bookListContainer.removeChild(parentArticle);
     this.arrayOfBooks = this.arrayOfBooks.filter(
-      (item) => item.id !== parentArticle.dataset.id
+      (item) => item.id !== parentArticle.dataset.id,
     );
     localStorage.setItem('arrayOfBooks', JSON.stringify(this.arrayOfBooks));
   }
