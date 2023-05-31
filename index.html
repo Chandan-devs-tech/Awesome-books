@@ -8,17 +8,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="header">
+      <h2 class="headerTitle"><a href="library.html">Awesome Books</a></h2>
+      <ul class="headerList">
+        <li class="listBtn headerListBtn">List</li>
+        <li class="addBtn headerListBtn">Add new</li>
+        <li class="contactBtn">Contact</li>
+      </ul>
+    </div>
+    <div class="liveDate">
+      <p id="demo"></p>
+    </div>
     <div class="mainContainer">
-      <h1 class="title">All awesome books</h1>
-      <div class="bookListContainer"></div>
-      <div class="underline"></div>
+      <div class="listSection">
+        <h2 class="title">All awesome books</h2>
+        <div class="bookListContainer"></div>
+      </div>
       <form action="" class="formContainer">
         <h2 class="formTitle">Add a new book</h2>
         <input type="text" id="title" placeholder="Title" />
         <input type="text" id="author" placeholder="Author" />
         <button class="formBtn" type="button">Add</button>
       </form>
+      <div class="contactSection">
+        <h2 class="contactTitle">Contact Information</h2>
+        <p>
+          Do you have any questions or suggestions or you'd want to drop us a
+          hello?
+        </p>
+        <ul class="contactDetail">
+          <li>Chandan Gupta</li>
+          <li>Mail at: <a href="mailto:chandanguptabsb@gmail.com">chandanguptabsb@gmail.com</a>
+          </li>
+          <li>Number: +18332403627</li>
+          <li>
+            Address: 123 Main Street, City: Austin, State: Texas
+          </li>
+        </ul>
+      </div>
     </div>
-    <script src="./js/classes.js"></script>
+    <footer>
+      <p>©2023 All rights reserved. Discover the magic within these pages.</p>
+    </footer>
+    <script src="./js/navigation.js"></script>
   </body>
 </html>
