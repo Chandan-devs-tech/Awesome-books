@@ -76,7 +76,6 @@ body {
 }
 
 .bookListContainer {
-  /* display: none; */
   border: 2px solid black;
   border-radius: 3px;
   width: 50%;
@@ -188,6 +187,3 @@ footer {
   flex-direction: column;
 }
 
-/* .hide {
-  display: none;
-} */
