@@ -125,7 +125,7 @@ class BookList {
         id: bookId,
         author: value2,
       };
-      this.arrayOfBooks.push(book);
+      this.arrayOfBooks.unshift(book);
       this.displayBooks();
       localStorage.setItem('arrayOfBooks', JSON.stringify(this.arrayOfBooks));
       this.titleInput.value = '';
