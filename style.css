@@ -8,15 +8,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #fff7d4;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid black;
+  border: 3px solid #4c3d3d;
   margin: 10px;
   border-radius: 3px;
+  background: #4c3d3d;
 }
 
 .headerTitle {
@@ -25,7 +27,7 @@ body {
 
 .headerTitle a {
   text-decoration: none;
-  color: black;
+  color: #ffd95a;
 }
 
 .headerList {
@@ -36,10 +38,11 @@ body {
 .headerList li {
   font-size: 22px;
   cursor: pointer;
+  color: #fff7d4;
 }
 
 .headerListBtn {
-  border-right: 2px solid black;
+  border-right: 2px solid #4c3d3d;
   padding: 10px;
 }
 
@@ -64,6 +67,7 @@ body {
   text-align: center;
   font-size: xx-large;
   padding-bottom: 10px;
+  color: #c07f00;
 }
 
 .listSection {
@@ -87,7 +91,7 @@ body {
   gap: 15px;
   padding-bottom: 20px;
   padding-top: 25px;
-  width: 35%;
+  width: 50%;
   display: none;
 }
 
@@ -97,9 +101,10 @@ body {
   padding: 5px;
   border-radius: 3px;
   font-size: medium;
-  background: none;
-  border: 3px solid #000;
-  box-shadow: 3px 3px 3px black;
+  border: 3px solid #4c3d3d;
+  box-shadow: 3px 3px 3px #4c3d3d;
+  background: #4c3d3d;
+  color: #fff7d4;
 }
 
 .formBtn {
@@ -108,9 +113,10 @@ body {
   border-radius: 3px;
   font-size: medium;
   align-self: flex-end;
-  background: none;
-  border: 3px solid #000;
-  box-shadow: 3px 3px 3px black;
+  background: #4c3d3d;
+  border: 3px solid #4c3d3d;
+  box-shadow: 3px 3px 3px #4c3d3d;
+  color: #fff7d4;
 }
 
 .bookListItems {
@@ -122,7 +128,7 @@ body {
 }
 
 .bookListItems:nth-child(odd) {
-  background: lightgray;
+  background: #ffd95a;
 }
 
 .bookList {
@@ -149,12 +155,14 @@ button {
 .formTitle {
   text-align: center;
   font-size: xx-large;
+  color: #c07f00;
 }
 
 .contactTitle {
   text-align: center;
   font-size: xx-large;
   padding-bottom: 10px;
+  color: #c07f00;
 }
 
 .contactSection {
@@ -175,14 +183,82 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
+  border: 3px solid #4c3d3d;
   margin: 0 12px 10px 12px;
   border-radius: 3px;
   padding: 5px 15px;
-  width: 93%;
+  background: #4c3d3d;
+}
+
+footer p {
+  color: #ffd95a;
 }
 
 .show {
   display: flex;
   flex-direction: column;
+}
+
+.contactDetail li a {
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .headerListBtn {
+    border-right: 2px solid #4c3d3d;
+    padding: 5px;
+  }
+
+  .contactBtn {
+    padding: 5px;
+  }
+
+  .bookListContainer {
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 90%;
+  }
+
+  title {
+    text-align: center;
+    font-size: xx-large;
+    padding-bottom: 10px;
+    color: #c07f00;
+    margin-top: 30px;
+  }
+
+  .listSection {
+    margin-top: 25px;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .formContainer {
+    width: 85%;
+  }
+
+  .mainContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .contactSection {
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4c3d3d;
+    margin: 0 12px 10px 12px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    background: #4c3d3d;
+  }
 }
